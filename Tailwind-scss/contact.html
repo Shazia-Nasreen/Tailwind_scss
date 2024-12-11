@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakta oss på Pärmar & Poesi.">
+  <title>Kontakta Oss - Pärmar & Poesi</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-red-600 p-4 text-center">
+    <a href="index.html" class="text-white text-3xl font-bold hover:text-yellow-400 transition duration-300">Pärmar & Poesi</a>
+    <nav class="mt-2">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="index.html" class="text-white hover:text-yellow-400">Hem</a></li>
+        <li><a href="events.html" class="text-white hover:text-yellow-400">Events</a></li>
+        <li><a href="books.html" class="text-white hover:text-yellow-400">Böcker</a></li>
+        <li><a href="contact.html" class="text-white hover:text-yellow-400">Kontakta Oss</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-lg flex flex-col md:flex-row">
+    <div class="contact-info flex-1 mr-0 md:mr-4">
+      <h1 class="text-2xl text-green-700 text-center mb-4">Kontakta Oss</h1>
+
+      <!-- Contact Information -->
+      <section class="mb-6">
+        <h2 class="text-red-600 text-xl mb-2">Kontaktinformation</h2>
+        <p><strong>Adress:</strong> Pärmar & Poesi, Litteraturgatan 12, 123 45 Stockholm, Sverige</p>
+        <p><strong>Telefon:</strong> +46 8 123 456 78</p>
+        <p><strong>Öppettider för telefon:</strong> Måndag - Fredag, 10:00 - 18:00</p>
+        <p><strong>Drop-in:</strong> Måndag - Fredag, 10:00 - 18:00</p>
+
+        <h2 class="text-red-600 text-xl mb-2">Våra Kontakter</h2>
+        <div class="contact-person mb-4">
+          <p><strong>Anna Svensson</strong><br>Email: <a href="mailto:anna@parmarpoesi.se" class="text-blue-500 hover:underline">anna@parmarpoesi.se</a><br>Jobbtitel: Butikschef</p>
+        </div>
+        <div class="contact-person mb-4">
+          <p><strong>Johan Andersson</strong><br>Email: <a href="mailto:johan@parmarpoesi.se" class="text-blue-500 hover:underline">johan@parmarpoesi.se</a><br>Jobbtitel: Försäljning</p>
+        </div>
+        <div class="contact-person mb-4">
+          <p><strong>Lisa Eriksson</strong><br>Email: <a href="mailto:lisa@parmarpoesi.se" class="text-blue-500 hover:underline">lisa@parmarpoesi.se</a><br>Jobbtitel: Marknadsföring</p>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section>
+        <h2 class="text-red-600 text-xl mb-2">Skicka ett Meddelande</h2>
+        <form id="contact-form">
+          <label for="name" class="block font-bold mt-2">Namn:</label>
+          <input type="text" id="name" name="name" required class="mt-1 p-2 border border-gray-300 rounded w-full">
+
+          <label for="email" class="block font-bold mt-2">E-post:</label>
+          <input type="email" id="email" name="email" required class="mt-1 p-2 border border-gray-300 rounded w-full">
+
+          <label for="subject" class="block font-bold mt-2">Ämne:</label>
+          <input type="text" id="subject" name="subject" required class="mt-1 p-2 border border-gray-300 rounded w-full">
+
+          <label for="message" class="block font-bold mt-2">Meddelande:</label>
+          <textarea id="message" name="message" rows="5" required class="mt-1 p-2 border border-gray-300 rounded w-full resize-none"></textarea>
+
+          <button type="submit" class="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">Skicka</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Image Holder -->
+    <div class="image-holder flex-1 flex justify-center items-center mt-6 md:mt-0">
+      <img src="images/contact.jpg" alt="Kontakta oss" class="max-w-full h-auto rounded-lg"> <!-- Placeholder image -->
+    </div>
+  </div>
+
+  <footer class="bg-red-600 text-white p-4 text-center">
+    <p>&copy; 2024 Pärmar & Poesi</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form submission
+      alert("Tack för ditt meddelande! Vi återkommer snart.");
+      form.reset(); // Reset the form after submission
+    });
+  </script>
+
+</body>
+
+</html>

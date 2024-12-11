@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pärmar & Poesi erbjuder böcker och litterära evenemang för bokälskare.">
+  <meta name="keywords" content="bokhandel, evenemang, böcker, litteratur, nyheter">
+  <title>Home - Pärmar & Poesi</title>
+  <link href="output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-100">
+  <header>
+    <nav class="bg-red-600 py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <a href="index.html" class="text-red text-2xl font-bold">Pärmar & Poesi</a>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="books.html" class="text-white">Books</a></li>
+          <li><a href="events.html" class="text-white">Events</a></li>
+          <li><a href="contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-8">
+    <section class="hero bg-green-600 text-white text-center py-16">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-bold">Välkommen till Pärmar & Poesi</h1>
+        <p class="mt-4 text-lg">Din lokala bokhandel med litteratur och evenemang för alla bokälskare.</p>
+        <a href="books.html" class="inline-block mt-6 px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded hover:bg-yellow-300">Utforska våra böcker</a>
+      </div>
+    </section>
+  </main>
+  
+
+    <section class="about text-center py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold">Om oss</h2>
+        <p class="mt-4 max-w-2xl mx-auto">Pärmar & Poesi är en personlig bokhandel som erbjuder ett brett utbud av böcker, både klassiska och moderna titlar. Vi är också kända för våra litterära evenemang.</p>
+      </div>
+    </section>
+
+    <section class="cards container mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/Böcker.avif" alt="Böcker" class="w-full">
+        <div class="card-content p-4 text-center">
+          <h3 class="text-xl font-bold">Böcker</h3>
+          <p class="mt-2">Upptäck vårt stora utbud av böcker.</p>
+        </div>
+      </div>
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/offers.jpg" alt="Erbjudanden" class="w-full">
+        <div class="card-content p-4 text-center">
+          <h3 class="text-xl font-bold">Erbjudanden</h3>
+          <p class="mt-2">Se våra senaste erbjudanden och kampanjer.</p>
+        </div>
+      </div>
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/pussel.jfif" alt="Spel & Pussel" class="w-full">
+        <div class="card-content p-4 text-center">
+          <h3 class="text-xl font-bold">Spel & Pussel</h3>
+          <p class="mt-2">Roliga spel och pussel för hela familjen.</p>
+        </div>
+      </div>
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/news.avif" alt="Nyheter" class="w-full">
+        <div class="card-content p-4 text-center">
+          <h3 class="text-xl font-bold">Nyheter</h3>
+          <p class="mt-2">Håll dig uppdaterad med våra senaste nyheter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-red-600 text-white py-4 text-center">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2024 Pärmar & Poesi</p>
+    </div>
+  </footer>
+</body>
+
+</html>
