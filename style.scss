@@ -1,4 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// Variabler för färger
+$primary-color: #f44336; // Röd
+$secondary-color: #4caf50; // Grön
+$accent-color: #ffeb3b; // Gul
+$text-color: #212121; // Textfärg
 
+// Mixins för att skapa ett responsivt grid
+@mixin grid-template($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 1.5rem;
+}
+
+// Huvudstilar
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+}
+
+.hero {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+// Variabler
+$primary-color: #E63946; // Röd
+$secondary-color: #F1FAEE; // Ljusgrå
+$accent-color: #F1FAEE; // Gul
+
+// Grundläggande styling
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $secondary-color;
+  color: #333;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Layout
+.hero {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+// Responsivitet
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+}
